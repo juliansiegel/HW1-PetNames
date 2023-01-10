@@ -48,12 +48,10 @@ seattlepets %>%
   arrange(species, n)
 ```
 
-
-
 ### Exercise 5
 
-Remove this text, and add your answer for Exercise 5 here.
+The names below the line are more common for cats than for dogs.
 
 ### Exercise 6
 
-Remove this text, and add your answer for Exercise 6 here.
+The relationship for the variables is positive because when a name is more common for a cat it will generally be more common for a dog or vice versa.
