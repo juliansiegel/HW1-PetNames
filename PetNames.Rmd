@@ -1,7 +1,7 @@
 ---
 title: "HW 01 - Pet names"
 author: "Julian Siegel"
-date: "January 9, 2023"
+date: "01/09/2023"
 output: github_document
 ---
 
@@ -16,20 +16,20 @@ library(openintro)
 
 ### Exercise 1
 
-There are \_\_\_ pets in the dataset.
+There are 52,519 pets in the data set.
 
 ### Exercise 2
 
-Remove this text, and add your answer for Exercise 2 here.
+There are 7 variables in the data set.
 
 ### Exercise 3
 
-Remove this text, and add your answer for Exercise 3 here.
-
-```{r most-common-names}
+```{r common-names}
 seattlepets %>%
   count(animal_name, sort = TRUE)
 ```
+  
+The three most common names are N/A, Lucy, and Charlie
 
 ### Exercise 4
 
