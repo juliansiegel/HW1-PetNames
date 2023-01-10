@@ -33,11 +33,22 @@ The three most common names are N/A, Lucy, and Charlie
 
 ### Exercise 4
 
-Remove this text, and add your answer for Exercise 4 here.
+```{r common-names-by-species}
+seattlepets %>% 
+  group_by(species) %>%
+  count(animal_name, sort = TRUE)
 
-```{r most-common-cat-dog-names}
-# remove this comment and add the code for Exercise 4 here
+seattlepets %>%
+  count(species, sort = TRUE)
+
+seattlepets %>% 
+  group_by(species) %>%
+  count(animal_name, sort = TRUE) %>% 
+  slice_max(n, n = 5) %>% 
+  arrange(species, n)
 ```
+
+
 
 ### Exercise 5
 
